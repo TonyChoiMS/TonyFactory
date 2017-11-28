@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tony.tonyfactory">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fcm.MessagingActivity" />
+        <activity android:name=".database.DatabaseActivity" />
+        <activity android:name=".youtube.YoutubeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".youtube.VideoViewActivity" />
+
+        <activity android:name=".facebook.FacebookActivity" />
+        <activity android:name=".facebook.LogoutActivity" />
+        <activity android:name=".cardview.CardViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".intro.IntroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".downloadmanager.DownloadActivity" />
+        <activity android:name=".instagram.InstagramActivity" />
+        <activity android:name=".audiotagger.AudioTaggerActivity" />
+        <activity android:name=".ItemTouchHelperRecyclerView.RecyclerViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--<meta-data-->
+            <!--android:name="com.google.firebase.messaging.default_notification_icon"-->
+            <!--android:resource="@drawable/ic_stat_ic_notification" />-->
+        <!--&lt;!&ndash; Set color used with incoming notification messages. This is used when no color is set for the incoming-->
+             <!--notification message. See README(https://goo.gl/6BKBk7) for more. &ndash;&gt;-->
+        <!--<meta-data-->
+            <!--android:name="com.google.firebase.messaging.default_notification_color"-->
+            <!--android:resource="@color/colorAccent" />-->
+        <!--&lt;!&ndash; ./Firebase Notifications &ndash;&gt;-->
+
+        <activity android:name=".main.TestActivity" />
+    </application>
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Firebase CM" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Instagram" />
+        <item
+            android:id="@+id/nav_database"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Database" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Youtube" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Management" />
+        <item
+            android:id="@+id/nav_tagger"
+            android:icon="@drawable/ic_menu_send"
+            android:title="tagger" />
+
+        <item
+            android:id="@+id/nav_recycler"
+            android:icon="@drawable/btn_widget"
+            android:title="RecyclerView" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/com_facebook_favicon_blue"
+                android:title="Logout" />
+        </menu>
+
+    </item>
+</menu>

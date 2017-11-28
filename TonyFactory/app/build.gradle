@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.example.tony.tonyfactory"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // Android Support Design Library
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support:design:27.0.1'
+    implementation 'com.android.support:recyclerview-v7:27.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // Gson, Volley, Glide
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    // Youtube Api
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    // Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+    // Google Firebase Library
+    implementation 'com.google.firebase:firebase-database:10.2.0'
+    implementation 'com.google.firebase:firebase-messaging:10.2.0'
+    // Mp3 Tag Edit Library jaudiotagger
+    implementation 'org:jaudiotagger:2.0.3'
+    // JakeWharton ButterKnife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,76 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Tony Factory</string>
+    <string name="facebook_app_id">FaceBook Api Key</string>
+
+    <!-- Main Button String-->
+    <string name="btnFcm">Firebase Cloud Messaging</string>
+    <string name="btnFdb">Firebase Database Service</string>
+    <string name="btnYoutube">Youtube API Service</string>
+    <string name="btnFacebook">Facebook API Service</string>
+
+    <!-- FDB Activity-->
+    <string name="name">enter your name</string>
+    <string name="email">enter your email</string>
+    <string name="action_save">Insert Database</string>
+
+    <!-- Youtube Activity-->
+    <string name="search">검색</string>
+    <string name="searchHint">검색어를 입력해 주세요.</string>
+
+    <!-- Navigation View -->
+    <string name="nav_title">Tony NavigationView</string>
+    <string name="nav_msg">TonyApp@rainbow.co.kr</string>
+    <string name="openNav">네비게이션 뷰 오픈</string>
+    <string name="closeNav">네비게이션 뷰 종료</string>
+
+    <!-- Menu String-->
+    <string name="action_progress">Animation Progress</string>
+    <string name="action_music">download Music</string>
+    <string name="action_image">download Image</string>
+    <string name="action_two">download all</string>
+    <string name="action_cancel">cancel download</string>
+    <string name="action_confirm">confirm status</string>
+    <string name="action_permission">Permission</string>
+
+    <!-- Sliding Activity -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <!-- Card View -->
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+
+    <!-- Permission Activity -->
+    <string name="single_permission_text">(Click on FAB to check Single permission.\nTo test again, change the app permission in settings or reinstall the app)</string>
+    <string name="multiple_permission">Request Multiple Permissions</string>
+    <string name="permission_fragment">Request Permission on Fragment</string>
+
+    <!-- Follow URL-->
+    <string name="follow_list_url">https://api.instagram.com/v1/users/self/follows?access_token=<xliff:g id="token">%s</xliff:g></string>
+    <string name="follower_list_url">https://api.instagram.com/v1/users/self/followed-by?access_token=<xliff:g id="token">%s</xliff:g></string>
+    <string name="post_follow_url">https://api.instagram.com/v1/users/<xliff:g id="userid">%s</xliff:g>/relationship?access_token=<xliff:g id="token">%s</xliff:g></string>
+
+    <!-- RecyclerView Activity -->
+    <string name="my_cart">My Cart</string>
+    <string name="delete">DELETE</string>
+    <string name="action_search">Search</string>
+</resources>

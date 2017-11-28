@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/profileImage"
+        android:background="@mipmap/ic_launcher"
+         />
+    <TextView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/profileImage"
+        android:text="Logout from Facebook"
+        android:padding="16dp"
+        android:background="#494949"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:id="@+id/fbId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:padding="4dp"
+        android:textColor="#000"
+         />
+    <TextView
+        android:id="@+id/fbName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fbId"
+        android:padding="4dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/fbEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fbName"
+        android:padding="4dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/fbGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fbEmail"
+        android:padding="4dp"
+        android:textColor="#000"
+        />
+
+</RelativeLayout>
